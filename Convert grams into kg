@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    double grams, kg;
+
+    printf("Enter amount in grams: ");
+    scanf("%lf", &grams);
+
+    kg = grams / 1000;
+
+    printf("%.2lf grams = %.2lf kg\n", grams, kg);
+
+    return 0;
+}
