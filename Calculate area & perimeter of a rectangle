@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    double L, B, area, perimeter;
+
+    printf("Enter length of the rectangle (L): ");
+    scanf("%lf", &L);
+
+    printf("Enter breadth of the rectangle (B): ");
+    scanf("%lf", &B);
+
+    area = L * B;
+    perimeter = 2 * (L + B);
+
+    printf("Area = %.2lf\n", area);
+    printf("Perimeter = %.2lf\n", perimeter);
+
+    return 0;
+}
