@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    double H, L, area;
+
+    printf("Enter base length of the triangle (L): ");
+    scanf("%lf", &L);
+
+    printf("Enter height of the triangle (H): ");
+    scanf("%lf", &H);
+
+    area = (H * L) / 2;
+
+    printf("Area = %.2lf\n", area);
+
+    return 0;
+}
