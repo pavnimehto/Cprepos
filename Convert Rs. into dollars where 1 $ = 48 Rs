@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    double rupees, dollars;
+    const double RATE = 48.0;  // 1 $ = 48 Rs
+
+    printf("Enter amount in rupees: ");
+    scanf("%lf", &rupees);
+
+    dollars = rupees / RATE;
+
+    printf("Rs. %.2lf = $%.2lf\n", rupees, dollars);
+
+    return 0;
+}
