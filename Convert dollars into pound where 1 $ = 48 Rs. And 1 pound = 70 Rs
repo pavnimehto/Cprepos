@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    double dollars, rupees, pounds;
+    const double DOLLAR_RATE = 48.0;  // 1 $ = 48 Rs
+    const double POUND_RATE = 70.0;   // 1 pound = 70 Rs
+
+    printf("Enter amount in dollars: ");
+    scanf("%lf", &dollars);
+
+    rupees = dollars * DOLLAR_RATE;   // convert dollars to rupees
+    pounds = rupees / POUND_RATE;     // convert rupees to pounds
+
+    printf("$%.2lf = Rs. %.2lf = £%.2lf\n", dollars, rupees, pounds);
+
+    return 0;
+}
