@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    double L, area, perimeter;
+
+    printf("Enter side length of the square (L): ");
+    scanf("%lf", &L);
+
+    area = L * L;
+    perimeter = 4 * L;
+
+    printf("Area = %.2lf\n", area);
+    printf("Perimeter = %.2lf\n", perimeter);
+
+    return 0;
+}
