@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    double grossSales, discount, netSales;
+
+    printf("Enter gross sales: ");
+    scanf("%lf", &grossSales);
+
+    discount = 0.10 * grossSales;
+    netSales = grossSales - discount;
+
+    printf("Discount = %.2lf\n", discount);
+    printf("Net Sales = %.2lf\n", netSales);
+
+    return 0;
+}
