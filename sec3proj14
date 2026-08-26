@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{ 
+    int arr[10], sum=0, i;
+    float mean;
+    printf("Enter ten numbers:");
+    for (i=0; i<10; i++)
+    {
+        scanf("%d", &arr[i]);
+        sum = sum + arr[i];
+    }
+    mean = (float)sum / 10.0f;
+    printf("sum of these numbers= %d and mean of these numbers= %.2f", sum, mean);
+    return 0;
+
+}
