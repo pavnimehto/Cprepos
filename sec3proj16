@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main ()
+{
+    int i, arr[100], kue= arr[1], greatest, lowest, biz=arr[1];
+    printf("Enter all 100 numbers to be compared:");
+    for (i=0; i<10; i++)
+    {
+        scanf("%d", &arr[i]);
+        {if (arr[i]>= kue)
+        {
+            greatest = arr[i];
+            kue = arr[i];
+        }
+        else
+        {
+            greatest= kue;
+        }}
+        {if (arr[i]<=biz)
+            {
+                lowest = arr[i];
+                biz = arr[i];
+            }
+        else
+        {
+            lowest = biz;
+        }
+
+        }
+
+
+    }
+    printf("Largest number = %d and Smallest number = %d", greatest, lowest);
+}
