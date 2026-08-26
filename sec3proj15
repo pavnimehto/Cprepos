@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{ 
+    int n, sum=0, i;
+    float mean;
+    printf("What are the number of values you want to input?");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter the numbers:");
+    for (i=0; i<n; i++)
+    {
+        scanf("%d", &arr[i]);
+        sum = sum + arr[i];
+    }
+    mean = (float)sum / n;
+    printf("sum of these numbers= %d and mean of these numbers= %.2f", sum, mean);
+    return 0;
+}
