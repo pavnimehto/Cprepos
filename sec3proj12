@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int n, i;
+    printf("Enter a nuber:");
+    scanf("%d", &n);
+    while (i < n)
+    {
+        printf("Pavni\n");
+        i++;
+
+    }
+    
+}
