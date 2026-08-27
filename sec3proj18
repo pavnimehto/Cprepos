@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int i, boys=0, girls=0;
+    char sex;
+    printf("Enter sex of all 50 students by using 'M' for boys and 'G' for girls:");
+    for (i=0; i<10; i++)
+    {
+        scanf("%c\n", &sex);
+        if (sex== 'M')
+        {boys += 1;
+        }
+        else if (sex== 'F')
+        {girls+= 1;
+        }
+    }
+    printf("The number of girls = %d\n", girls);
+    printf("The number of boys = %d\n", boys);
+}
