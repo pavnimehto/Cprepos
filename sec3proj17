@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main ()
 {
-    int arr[10], i, positive=0, negative =0, zero =0;
+    int arr[200], i, positive=0, negative =0, zero =0;
     printf("Enter 200 values:");
-    for (i=0; i<10; i++)
+    for (i=0; i<200; i++)
     {
         scanf("%d", &arr[i]);
         if (arr[i]>0)
