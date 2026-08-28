@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    int i, n, z=0, sumFac=0, count=0;
+    printf("Enter a number of your choice:");
+    scanf("%d", &n);
+    int arr[n];
+    for (i=1; i<=n; i++)
+    {
+        if (n%i==0)
+        { arr[count] = i;
+        count++;
+        }
+        else 
+        {continue;}
+    }
+   
+    while (z<count)
+    {
+        if (arr[z]<=((float)n/2.0))
+        {sumFac+= arr[z];
+        z++;}
+        else 
+        break;
+    }
+    if (sumFac==n)
+    {printf("Given number is a perfect number");
+    }
+    else 
+    {printf("Gvien numbere is not a perfect number");}
+}
