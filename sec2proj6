@@ -1,8 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    float marks1, marks2, marks3, average;
-    char grade[20];
+    float marks1, marks2, marks3, average, total;
     
     printf("Enter marks of first subject:");
     scanf("%f", &marks1);
@@ -10,10 +9,16 @@ int main()
     scanf("%f", &marks2);
     printf("Enter marks of third subject:");
     scanf("%f", &marks3);
+    total = (float)(marks1 + marks2 + marks3);
+    average = (float)total/3.0;
 
-    average = (float)(marks1 + marks2 + marks3)/3.0;
+    printf("Total marks = %.2f\n", total);
+    printf("Average marks = %.2f\n", average);
 
-    if (average >= 70)
+    if (marks1<35 || marks2<35 || marks3<35)
+    {printf("Fail");
+    }
+    else if (average >= 70)
     {printf("Distinction");
     }
     else if (average >= 60)
@@ -28,7 +33,5 @@ int main()
     else
     {printf("Fail");
     }
-    if (marks1<35 || marks2<35 || marks3<35)
-    {printf("Fail");
-    }
+    
 }
