@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    float grossSales, netSales;
+    printf("Enter value of Gross Sales:");
+    scanf("%f", &grossSales);
+    if (grossSales>20000)
+    {
+        netSales = grossSales - grossSales*0.15;
+    }
+    else if (grossSales>10000)
+    {
+        netSales = grossSales - grossSales*0.1;
+    }
+    else 
+    {
+        netSales = grossSales - grossSales*0.05;
+    }
+    printf("Net Sales = %.2f", netSales);
+}
